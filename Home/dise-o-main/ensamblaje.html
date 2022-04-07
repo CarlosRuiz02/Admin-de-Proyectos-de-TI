@@ -93,12 +93,53 @@
                   </tr>
                 </tbody>
               </table>
-              <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">Mostrar Modal</button>
-              
+              <button type="button" class="mt-5 mx-5 btn btn-success" data-bs-toggle="modal" data-bs-target="#miModal"> Agregar</button>
+
+    <div class="modal fade" id="miModal" tabindex="-1" aria-hidden="true" aria-labelledby="modalTitle">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalTitle">Agregar Pedido</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="form-group">
+                <label for="exampleInputFolio">Folio</label>
+                <input  class="form-control" id="exampleInputFolio" aria-describedby="folioHelp" placeholder="Ingresar folio">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputTitular">Titular</label>
+                <input  class="form-control" id="exampleInputTitular" placeholder="Ingresar titular del pedido">
+              </div>
+                <div class="form-group">
+                <label for="exampleInputFecha">Fecha</label>
+                <input  class="form-control" id="exampleInputFecha" placeholder="Fecha del pedido">
+              </div>
+                <div class="form-group">
+                <label for="exampleInputDescripcion">Descripcion</label>
+                <textarea></textarea>
+              </div>
+                <div class="form-group">
+                <label for="exampleInputNotas">Notas del ensamblador</label>
+                <textarea></textarea>
+              </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-success">Agregar Pedido</button>
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
+          </div>
           </div>
         </div>
       </div>
-      
+
+          </div>
+        </div>
+      </div>
+
+
+                    
 
 
     <hr>
@@ -112,7 +153,8 @@
               <p><b>MISIÓN</b></p>
               <p>Somos una empresa que se dedica a la venta de piezas de computadoras, nuestro objetivo es llegar a ser el mejor proveedor de piezas en nuestro país y para poder lograrlo hemos definido una cultura que apoya a los integrantes de nuestro equipo de trabajo para que ellos puedan dar un excelente servicio a nuestros clientes. </p>
               <p><b>VISIÓN</b></p>
-              <p>Ser líderes en la venta de componentes de computadoras para los clientes a los que servimos, distinguiéndonos por la calidad de nuestra plataforma y transparencia en nuestros envíos llegando a ser la primera opción de nuestro cliente, gracias a nuestra gran calidad de servicio al cliente, entrega eficiente y a tiempo y un servicio claro y adecuado para el armado de los equipos de cómputo para poder ser reconocidos a nivel internacional para que muchas más personas sepan de nuestra existencia y sepan de qué se trata nuestra empresa y ver la calidad de nuestros productos. </p>
+              <p>Ser líderes en la venta de componentes de computadoras para los clientes a los que servimos,
+               distinguiéndonos por la calidad de nuestra plataforma y transparencia en nuestros envíos llegando a ser la primera opción de nuestro cliente, gracias a nuestra gran calidad de servicio al cliente, entrega eficiente y a tiempo y un servicio claro y adecuado para el armado de los equipos de cómputo para poder ser reconocidos a nivel internacional para que muchas más personas sepan de nuestra existencia y sepan de qué se trata nuestra empresa y ver la calidad de nuestros productos. </p>
                 
             </div>
 </div>

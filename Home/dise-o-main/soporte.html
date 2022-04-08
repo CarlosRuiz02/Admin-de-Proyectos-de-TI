@@ -44,7 +44,7 @@
                   <li><a class="dropdown-item" href="distribuicion.html">Distribución</a></li>
                   <li><a class="dropdown-item" href="ensamblaje.html">Ensamblaje</a></li>
                   <li><a class="dropdown-item" href="finanzas.html">Finanzas</a></li>
-                  <li><a class="dropdown-item" href="#">Mercadotecnia</a></li>
+                  <li><a class="dropdown-item" href="mercadoternia.html">Mercadotecnia</a></li>
                   <li><a class="dropdown-item" href="#">Recursos Humanos</a></li>
                   <li><a class="dropdown-item" href="soporte.html">Soporte</a></li>
                   <!--<li><hr class="dropdown-divider"></li>
@@ -52,7 +52,7 @@
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Contactanos</a>
+                <a class="nav-link active" aria-current="page" href="#contact">Contactanos</a>
               </li>
             </ul>
             <form class="d-flex">
@@ -161,32 +161,35 @@
                     <span aria-hidden="true">&times;</span>
                   </button>
                 </div>
-                <div class="modal-body">
-                  <div class="form-group">
-                      <label for="NOM">Nombre</label>
-                      <input  class="form-control" id="NOM" type="text" aria-describedby="folioHelp" placeholder="Ingresar nombre">
-                    </div>
+                <form method="GET" action="#">
+                  <div class="modal-body">
                     <div class="form-group">
-                      <label for="EMAIL">Email</label>
-                      <input  class="form-control" id="EMAIL" type="text" placeholder="ejemplo@gmail.com">
-                    </div>
-                    <div class="form-group">
-                      <label for="PROB">Problema</label>
-                      <select id="PROB" class="form-select" name="problema">
-                        <option value="0">Selecciona...</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                      </select>
-                    </div>
-                    <div class="form-group d-grid gap-2">
-                      <label for="DESC">Descripcion</label>
-                      <textarea id="DESC" class="form-control" name="descripicon" rows="10" cols="10" placeholder="Descripción del problema..."></textarea>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-success">Guardar</button>
-                  <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
-                </div>
+                        <label for="NOM">Nombre</label>
+                        <input  class="form-control" id="NOM" type="text" aria-describedby="folioHelp" placeholder="Ingresar nombre">
+                      </div>
+                      <div class="form-group">
+                        <label for="EMAIL">Email</label>
+                        <input  class="form-control" id="EMAIL" type="text" placeholder="ejemplo@gmail.com">
+                      </div>
+                      <div class="form-group">
+                        <label for="PROB">Problema</label>
+                        <select id="PROB" class="form-select" name="problema">
+                          <option value="0">Selecciona...</option>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                        </select>
+                      </div>
+                      <div class="form-group d-grid gap-2">
+                        <label for="DESC">Descripcion</label>
+                        <textarea id="DESC" class="form-control" name="descripicon" rows="10" cols="10" placeholder="Descripción del problema..."></textarea>
+                      </div>
+                  </div>
+
+                  <div class="modal-footer">
+                    <button type="submit" class="btn btn-success">Guardar</button>
+                    <button type="reset" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
+                  </div>
+                </form>
               </div>
             </div>
           </div>
@@ -200,10 +203,12 @@
                     <span aria-hidden="true">&times;</span>
                   </button>
                 </div>
-                <div class="modal-body">
-                  <div class="form-group">
+                
+                <form method="GET" action="#">
+                  <div class="modal-body">
+                    <div class="form-group">
                       <label for="NOM">Nombre</label>
-                      <input  class="form-control" id="NOM" type="text" aria-describedby="folioHelp" placeholder="Ingresar nombre">
+                      <input  class="form-control" id="NOM" type="text" placeholder="Ingresar nombre">
                     </div>
                     <div class="form-group">
                       <label for="PROB">Problema</label>
@@ -217,29 +222,28 @@
                       <label for="DESC">Descripcion</label>
                       <textarea id="DESC" class="form-control" name="descripicon" rows="10" cols="10" placeholder="Descripción del problema..."></textarea>
                     </div>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-success">Guardar</button>
-                  <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
-                </div>
+                  </div>
+                  <div class="modal-footer">
+                      <button type="submit" class="btn btn-success">Guardar</button>
+                      <button type="reset" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
+                  </div>
+                </form>
               </div>
             </div>
           </div>
 
 
-    </div>
-
         </div>
       </div>
+
       <br><br>
       <hr>
       <br>
-      </div>
         <div class="container">
           <div class="row">
             <div class="col-sm-2"></div>
             <div class="col-sm-8">
-              <div class="alert alert-warning" role="alert" align="center" style="margin: 2px;">
+              <div class="alert alert-warning" id="contact" role="alert" align="center" style="margin: 2px;">
                 <h2>Contactanos</h2>
                 <p>Correo electrónico: HungryComputer@example.com<br>
                 Lada sin costo: 123-45-67-89<br>

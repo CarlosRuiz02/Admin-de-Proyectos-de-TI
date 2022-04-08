@@ -38,12 +38,12 @@
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                       <li><a class="dropdown-item" href="almacen.html">Almacen</a></li>
-                      <li><a class="dropdown-item" href="distribuicion.html">Distribución</a></li>
+                      <li><a class="dropdown-item" href="#">Distribución</a></li>
                       <li><a class="dropdown-item" href="ensamblaje.html">Ensamblaje</a></li>
                       <li><a class="dropdown-item" href="finanzas.html">Finanzas</a></li>
                       <li><a class="dropdown-item" href="#">Mercadotecnia</a></li>
                       <li><a class="dropdown-item" href="#">Recursos Humanos</a></li>
-                      <li><a class="dropdown-item" href="soporte.html">Soporte</a></li>
+                      <li><a class="dropdown-item" href="#">Soporte</a></li>
                       <!--<li><hr class="dropdown-divider"></li>
                       <li><a class="dropdown-item" href="#">Something else here</a></li>-->
                     </ul>
@@ -102,12 +102,61 @@
                           <button type="button" class="btn btn-danger"><i class="fa fa-trash" aria-hidden="true"></i> | Eliminar</button>
                         </td>
                         
+                          <!--Modal de Editar-->
+
+                        <div class="modal fade" id="ModalAgregadoProducto" tabindex="-1" aria-hidden="true" aria-labelledby="modalTitle">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title" id="modalTitle">Agregar producto</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Cancelar"></button>
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                              </div>
+                              <div class="modal-body">
+                                <div class="form-group">
+                                    <label for="exampleInputNombre">#</label>
+                                    <input  class="form-control" id="IdProd" aria-describedby="IdHelp" placeholder="Identificador del producto">
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="exampleInputID">Nombre</label>
+                                    <input  class="form-control" id="NombreProd" placeholder="Nombre del producto">
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="exampleInputPuesto">Marca</label>
+                                    <input  class="form-control" id="MarcaProd" placeholder="Marca del producto">
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="exampleInputDescuento">Modelo</label>
+                                    <input  class="form-control" id="ModeloProd" placeholder="Numero de Modelo">
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="exampleInputDescuento">Stock</label>
+                                    <input  class="form-control" id="StockProd" placeholder="Cantidad Numerica">
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="exampleInputBonos">Precio</label>
+                                    <input  class="form-control" id="PrecioProd" placeholder="Precio del producto">
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="exampleInputNota">Notas(opcional)</label>
+                                    <input  class="form-control" id="exampleInputNota" placeholder="Descripción del cambio">
+                                  </div>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-success">Confirmar</button>
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
+                              </div>
+                              </div>
+                            </div>
+                          </div></td>
+
                       </tr>
                       
                       
                     </tbody>
                   </table>
-                  <button type="button" class="btn btn-success"><i class="fa fa-plus" aria-hidden="true"></i> | Agregar</button>
+                  <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#ModalAgregadoProducto"><i class="fa fa-plus" aria-hidden="true"></i> | Agregar</button>
               </div>
             </div>
           </div>

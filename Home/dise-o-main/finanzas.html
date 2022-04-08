@@ -48,13 +48,13 @@
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Contactanos</a>
+                <a class="nav-link active" aria-current="page" href="#contact">Contactanos</a>
               </li>
             </ul>
             <form class="d-flex">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="">Usuario</a>
+                  <a class="nav-link active" aria-current="page" href="#">Usuario</a>
                 </li>
               </ul>
             </form>
@@ -98,7 +98,54 @@
                     <td>15%</td>
                     <td>$300</td>
                     <td>4,300</td>
-                    <td><a class="col btn btn-primary" href="Finanzas1.html" role="button">Editar</a></td>
+                    <td><button type="button" class="mt-0 mx-0 btn btn-success" data-bs-toggle="modal" data-bs-target="#miModal"><i class="fa fa-pencil" aria-hidden="true"></i> | Editar</button>
+
+                      <div class="modal fade" id="miModal" tabindex="-1" aria-hidden="true" aria-labelledby="modalTitle">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="modalTitle">Editar Sueldo</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                              <div class="form-group">
+                                  <label for="exampleInputNombre">Nombre</label>
+                                  <input  class="form-control" id="exampleInputNombre" aria-describedby="NombreHelp" placeholder="Nombre del Empleado"disabled>
+                                </div>
+                                <div class="form-group">
+                                  <label for="exampleInputID">ID</label>
+                                  <input  class="form-control" id="exampleInputID" placeholder="ID del Empleado" disabled>
+                                </div>
+                                <div class="form-group">
+                                  <label for="exampleInputPuesto">Puesto</label>
+                                  <input  class="form-control" id="exampleInputPuesto" placeholder="Puesto del Empleado"disabled>
+                                </div>
+                                <div class="form-group">
+                                  <label for="exampleInputSueldo">Sueldo Base</label>
+                                  <input  class="form-control" id="exampleInputSueldo" placeholder="Sueldo del Empleado">
+                                </div>
+                                <div class="form-group">
+                                  <label for="exampleInputDescuento">Descuentos</label>
+                                  <input  class="form-control" id="exampleInputDescuento" placeholder="ej. 15%">
+                                </div>
+                                <div class="form-group">
+                                  <label for="exampleInputBonos">Bonos</label>
+                                  <input  class="form-control" id="exampleInputBonos" placeholder="ej. 300">
+                                </div>
+                                <div class="form-group">
+                                  <label for="exampleInputNota">Notas(opcional)</label>
+                                  <input  class="form-control" id="exampleInputNota" placeholder="Descripción del cambio">
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-success">Confirmar</button>
+                              <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
+                            </div>
+                            </div>
+                          </div>
+                        </div></td>
                   </tr>
                 </tbody>
               </table>
@@ -139,7 +186,7 @@
       <div class="row">
         <div class="col-sm-2"></div>
         <div class="col-sm-8">
-          <div class="alert alert-warning" role="alert" align="center" style="margin: 2px;">
+          <div class="alert alert-warning" id="contact" role="alert" align="center" style="margin: 2px;">
           <h2>Contactanos</h2>
           <p>Correo electrónico: HungryComputer@example.com<br>
             Lada sin costo: 123-45-67-89<br>

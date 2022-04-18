@@ -4,10 +4,9 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Finanzas - HungryComputer</title>
+    
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   </head>
   <body>
@@ -37,25 +36,25 @@
                   Departamentos
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="almacen.html">Almacen</a></li>
-                  <li><a class="dropdown-item" href="distribuicion.html">Distribución</a></li>
-                  <li><a class="dropdown-item" href="ensamblaje.html">Ensamblaje</a></li>
-                  <li><a class="dropdown-item" href="finanzas.html">Finanzas</a></li>
-                  <li><a class="dropdown-item" href="mercadoternia.html">Mercadotecnia</a></li>
-                  <li><a class="dropdown-item" href="recursos humanos.html">Recursos Humanos</a></li>
-                  <li><a class="dropdown-item" href="soporte.html">Soporte</a></li>
+                  <li><a class="dropdown-item" href="#">Almacen</a></li>
+                  <li><a class="dropdown-item" href="#">Distribución</a></li>
+                  <li><a class="dropdown-item" href="#">Ensamblaje</a></li>
+                  <li><a class="dropdown-item" href="#">Finanzas</a></li>
+                  <li><a class="dropdown-item" href="#">Mercadotecnia</a></li>
+                  <li><a class="dropdown-item" href="#">Recursos Humanos</a></li>
+                  <li><a class="dropdown-item" href="#">Soporte</a></li>
                   <!--<li><hr class="dropdown-divider"></li>
                   <li><a class="dropdown-item" href="#">Something else here</a></li>-->
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#contact">Contactanos</a>
+                <a class="nav-link active" aria-current="page" href="#">Contactanos</a>
               </li>
             </ul>
             <form class="d-flex">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Usuario</a>
+                  <a class="nav-link active" aria-current="page" href="">Usuario</a>
                 </li>
               </ul>
             </form>
@@ -74,197 +73,82 @@
                 </ol>
               </nav>
               
-              <h1>Finanzas</h1><br>
+              <h1>Finanzas</h1>
               <hr>
-              <h3>Sueldo</h3><br>
-              <table class="table">
+            <table class="table">
                 <thead class="table-primary">
                   <tr>
-                    <th scope="col">Nombre</th>
-                    <th scope="col">ID</th>
-                    <th scope="col">Puesto</th>
-                    <th scope="col">Sueldo base</th>
-                    <th scope="col">Descuentos</th>
-                    <th scope="col">Bonos</th>
-                    <th scope="col">Sueldo Final</th>
-                    <th scope="col">Acciones</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>      
-                    <td>Carlos Ulibarri</td>
-                    <td>11</td>
-                    <td>jefe</td>
-                    <td>4,000</td>
-                    <td>15%</td>
-                    <td>$300</td>
-                    <td>4,300</td>
-                    <td>
-                      <!--Modal de Editar-->
-                      <button type="button" class="mt-0 mx-0 btn btn-secondary" data-bs-toggle="modal" data-bs-target="#miModal"><i class="fa fa-pencil" aria-hidden="true"></i> | Editar</button>
-
-                      <div class="modal fade" id="miModal" tabindex="-1" aria-hidden="true" aria-labelledby="modalTitle">
-                        <div class="modal-dialog">
-                          <div class="modal-content">
-                            <div class="modal-header">
-                              <h5 class="modal-title" id="modalTitle">Editar Sueldo</h5>
-                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                              </button>
-                            </div>
-                            <div class="modal-body">
-                              <div class="form-group">
-                                  <label for="exampleInputNombre">Nombre</label>
-                                  <input  class="form-control" id="exampleInputNombre" aria-describedby="NombreHelp" placeholder="Nombre del Empleado"disabled>
-                                </div>
-                                <div class="form-group">
-                                  <label for="exampleInputID">ID</label>
-                                  <input  class="form-control" id="exampleInputID" placeholder="ID del Empleado" disabled>
-                                </div>
-                                <div class="form-group">
-                                  <label for="exampleInputPuesto">Puesto</label>
-                                  <input  class="form-control" id="exampleInputPuesto" placeholder="Puesto del Empleado"disabled>
-                                </div>
-                                <div class="form-group">
-                                  <label for="exampleInputSueldo">Sueldo Base</label>
-                                  <input type="number"  class="form-control" id="exampleInputSueldo" placeholder="Sueldo del Empleado">
-                                </div>
-                                <div class="form-group">
-                                  <label for="exampleInputDescuento">Descuentos</label>
-                                  <input type="number"  min="1" max="80" class="form-control" id="exampleInputDescuento" placeholder="ej. 15%">
-                                </div>
-                                <div class="form-group">
-                                  <label for="exampleInputBonos">Bonos</label>
-                                  <input type="number" min="0" class="form-control" id="exampleInputBonos" placeholder="ej. $300">
-                                </div>
-                                <div class="form-group">
-                                  <label for="exampleInputNota">Notas(opcional)</label>
-                                  <input  class="form-control" id="exampleInputNota" placeholder="Descripción del cambio">
-                                </div>
-                            </div>
-                            <div class="modal-footer">
-                              <button type="button" class="btn btn-success">Confirmar</button>
-                              <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
-                            </div>
-                            </div>
-                          </div>
-                        </div>
-                      
-                      </td>
-                  </tr>
-                </tbody>
-              </table>
-              <br><br>
-              <h3>Activos/Pasivos</h3><br>
-              <table class="table">
-                <thead class="table-primary">
-                  <tr>
-                    <th scope="col" style="align-content: center;">Activos</th>
-                    <th scope="col"></th>
-                    <th scope="col">Pasivos</th>
-                    <th scope="col"></th>
+                    <th scope="col">#</th>
+                    <th scope="col">First</th>
+                    <th scope="col">Last</th>
+                    <th scope="col">Handle</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <th>Descripción</th>
-                    <th>Cantidad</th>
-                    <th>Descripción</th>
-                    <th>Cantidad</th>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
                   </tr>
                   <tr>
-                    <td>xxxxxxx</td>
-                    <td>$$$$$$$</td>
-                    <td>xxxxxxx</td>
-                    <td>$$$$$$$</td>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td colspan="2">Larry the Bird</td>
+                    <td>@twitter</td>
                   </tr>
                 </tbody>
               </table>
           </div>
         </div>
-        <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#ModalAgregadoActivo"><i class="fa fa-plus" aria-hidden="true"></i> | Activo</button>
-        <!--Modal de Agregar Activo\pasivo-->
+      </div>
+      
 
-        <div class="modal fade" id="ModalAgregadoActivo" tabindex="-1" aria-hidden="true" aria-labelledby="modalTitle">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="modalTitle">Agregar Activo</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Cancelar"></button>
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body">
-                  <div class="form-group">
-                    <label for="exampleInputDescripcion">Descripción</label>
-                    <input  class="form-control" id="DesActivo" placeholder="Nombre del Activo">
-                  </div>
-                  <div class="form-group">
-                    <label for="exampleInputCantidad">Cantidad</label>
-                    <input type="number" class="form-control" id="CantidadActivo" placeholder="$00,000">
-                  </div>
-              </div>
-            </div>
-          </div>
-        </div>
-          <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#ModalAgregadoPasivo"><i class="fa fa-plus" aria-hidden="true"></i> | Pasivo</button>
-          <div class="modal fade" id="ModalAgregadoPasivo" tabindex="-1" aria-hidden="true" aria-labelledby="modalTitle">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="modalTitle">Agregar Pasivo</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Cancelar"></button>
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                <div class="modal-body">
-                  <div class="form-group">
-                    <div class="form-group">
-                      <label for="exampleInputDescripcion">Descripción</label>
-                      <input  class="form-control" id="DesPasivo" placeholder="Descripción del Pasivo">
-                    </div>
-                    <div class="form-group">
-                      <label for="exampleInputCantidad">Cantidad</label>
-                      <input type="number" class="form-control" id="CantidadPasivo" placeholder="$00,000">
-                    </div>
-                    
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-success">Confirmar</button>
-                  <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
-                </div>
-                </div>
-              </div>
-            </div>
-      </div>
-      </div>
-    <br><br>
     <hr>
-    <br>
     <div class="container">
       <div class="row">
-        <div class="col-sm-2"></div>
-        <div class="col-sm-8">
-          <div class="alert alert-warning" id="contact" role="alert" align="center" style="margin: 2px;">
-            <h2>Contactanos</h2>
-            <p>Correo electrónico: HungryComputer@example.com<br>
-            Lada sin costo: 123-45-67-89<br>
-            <p><b>Departamento de atención al cliente:</b><br>
-            Universidad Politécnica de Victoria - Departamento de ITI - 2do Piso<br>
-            Cd. Victoria, Tamaulipas, México<br>
-            C.P.87000</p>
-            <p><b>Necesitas ayuda?</b><br>
-              Utiliza este enlace para atender tus dudas:<br>
-              <a href="form-soporte/fromEmpleado.html">Llenar Formulario</a>
-            </p>
-      </p>
-    </div>
-    </div>
-  </div>
+        <div class="col-md-8 col-12">
+          <div class="row">
+            <div class="col-lg-6 col-12 col-xl-11">
+              <h3>Acerca de nosotros</h3>
+              <hr>
+              <p><b>MISIÓN</b></p>
+              <p>Somos una empresa que se dedica a la venta de piezas de computadoras, nuestro objetivo es llegar a ser el mejor proveedor de piezas en nuestro país y para poder lograrlo hemos definido una cultura que apoya a los integrantes de nuestro equipo de trabajo para que ellos puedan dar un excelente servicio a nuestros clientes. </p>
+              <p><b>VISIÓN</b></p>
+              <p>Ser líderes en la venta de componentes de computadoras para los clientes a los que servimos, distinguiéndonos por la calidad de nuestra plataforma y transparencia en nuestros envíos llegando a ser la primera opción de nuestro cliente, gracias a nuestra gran calidad de servicio al cliente, entrega eficiente y a tiempo y un servicio claro y adecuado para el armado de los equipos de cómputo para poder ser reconocidos a nivel internacional para que muchas más personas sepan de nuestra existencia y sepan de qué se trata nuestra empresa y ver la calidad de nuestros productos. </p>
+                
+            </div>
 </div>
-    <br><br>
+        </div>
+        <div class="col-md-4 col-12 mt-md-0 mt-2">
+          <h3>Contactanos</h3>
+          <hr>
+          <address>
+          <strong>Empresa</strong><br>
+            HungryComputer<br>
+            Victoria, Tamaulipas, 87000<br>
+            <abbr title="Phone">P:</abbr> (123) 456-7890
+          </address>
+          <address>
+          <strong>Email</strong><br>
+          <a href="mailto:#">HungryComputer@example.com</a>
+          </address>
+        </div>
+      </div>
+    </div>
     <footer class="text-center">
-      <p style="color: aliceblue; background-color: #646569;">Copyright © 2022. Todos los derechos reservados. / HungryComputer 2022 - 2022</p>
+
+       
+          
+            <p style="color: aliceblue; background-color: #646569;">Copyright © 2022. Todos los derechos reservados. / HungryComputer 2022 - 2022</p>
+          
+        
+
     </footer>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="../../../Documentos/js/jquery-3.3.1.min.js"></script>
